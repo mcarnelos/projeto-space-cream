@@ -1,8 +1,10 @@
+/* Mobile */
 :root {
   font-size: 62.5%;
 
   --ff-heading: 'Staatliches', cursive;
   --ff-texting: 'Palanquin', sans-serif;
+  --ff-footer: 'Open Sans', sans-serif;
 
   --bg-primary: #EFF1FF;
   --bg-header: #8E9AAF;
@@ -23,7 +25,7 @@ body {
 header {
   background: var(--bg-header);
 
-  height: 27.9rem;
+  height: 30.9rem;
   padding-top: 3.2rem;
   margin-bottom: 1.4rem;
 }
@@ -39,8 +41,8 @@ h1 {
   background: var(--bg-h1);
   text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
 
-  margin-top: 1.8rem;
-  margin-bottom: 2.9rem;
+  margin-top: 3.2rem;
+  margin-bottom: 3rem;
   padding-block: 0.8rem;
 }
 
@@ -65,6 +67,8 @@ p {
   width: 30.5rem;
 
   margin: auto;
+  padding-bottom: 6.3rem;
+  padding-top: 2rem;
 }
 
 .card {
@@ -73,12 +77,14 @@ p {
   animation: downtop 700ms;
 }
 
-.cards {
-  display: flex;
-  flex-direction: column;
+main {
+  display: grid;
   gap: 3.6rem;
+  margin-top: 33rem;
+}
 
-  margin-top: 6.3rem;
+.img_hidden {
+  display: none;
 }
 
 h2 {
@@ -106,6 +112,10 @@ h2 {
   animation: topdown 1500ms; /* chamando animação */
 }
 
+footer {
+  opacity: 0;
+}
+
 /* animações */
 @keyframes topdown {
   0% {
@@ -130,3 +140,118 @@ h2 {
     transform: translateY(0);
   }
 }
+
+/* Desktop */
+@media (min-width: 930px) {
+  .page {
+    width: 100%;
+    display: inline-flex;
+    
+    background: #FFFFFF;
+  }
+
+  main {
+    display: grid;
+
+    gap: 3.2rem;
+
+    margin: 6.4rem 8.1rem 5rem 9.8rem;
+
+    grid-template-areas: "A B E"
+                         "D C F";
+  }
+
+  main div:nth-child(1) {
+    grid-area: A;
+  }
+
+  main div:nth-child(2) {
+    grid-area: B;
+  }
+
+  main div:nth-child(3) {
+    grid-area: C;
+
+    margin-top: -5rem;
+  }
+
+  main div:nth-child(4) {
+    grid-area: D;
+
+    margin-top: -21rem;
+  }
+
+  main div:nth-child(5) {
+    grid-area: E;
+  }
+
+  main div:nth-child(6) {
+    grid-area: F;
+
+    margin-top: -21rem;
+  }
+
+  header {
+    height: 37.7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5.3rem;
+  }
+
+  h1 {
+    margin-top: -3.2rem;
+    padding-block: 0.8rem;
+  }
+
+  h2 {
+    opacity: 0;
+    animation: none;
+  }
+
+  p {
+    background: var(--bg-header);
+    color: #FFFFFF;
+
+    margin-top: -5rem;
+    padding: 3.2rem 4.8rem 12.5rem 5.4rem;
+  }
+
+  .card {
+    animation: none;
+  }
+
+  .card img {
+    width: 26rem;
+
+    margin-bottom: 5rem;
+
+    object-fit: cover; /* cobre toda a caixa definida para a imagem */
+
+    transition: all 200ms; /* define o tempo da transição */
+  }
+
+  .card img:hover {
+    transform: scale(1.1); /* define as transições */
+    opacity: 0.8;
+  }
+
+  .img_hidden {
+    display: initial;
+  }
+
+  footer {
+    color: #4A4E69;
+
+    opacity: 1;
+
+    font-family: var(--ff-footer);
+    font-size: 1.4rem;
+
+    margin-top: -12rem;
+  }
+
+}
+
+
+ 
+  
