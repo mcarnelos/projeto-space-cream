@@ -1,33 +1,33 @@
 # projeto-space-cream
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/mcarnelos/projeto-space-cream/new/master/LICENSE)
 
-# Sobre o projeto
+# About the project
 
-O site Space Cream foi desenvolvido durante o programa Explorer da Rocketseat, onde foi proposto criar um site utilizando o conceito de mobile first 
-e depois desenvolvendo a versão desktop utilizando conceitos de responsividade.
+The Space Cream website was developed during Rocketseat's Explorer program, where it was proposed to create a website using the concept of mobile first and then developing the desktop version using responsiveness concepts.
 
 ## Layout web
-O site pode ser visualizado no seguinte endereço: 
+The website can be viewed at the following address: 
 https://mcarnelos.github.io/projeto-space-cream/
 
-# Tecnologias utilizadas
+# Technologies used
 ## Front end
 - HTML / CSS
 
-# Como executar o projeto
+# How to run the project
 
 ## Front end
 
 ```bash
-# clonar repositório
+# clone repository
 git clone https://github.com/mcarnelos/projeto-space-cream
 
-# entrar na pasta projeto-doctor-care
-abrir na IDE de preferência, no meu caso foi utilizado o Visual Studio Code.
+# enter the folder projeto-space-cream
+open in the IDE of choice, in my case Visual Studio Code was used.
 ```
 
-# Autor
+# Author
 
 Murilo Carnelós
 
-https://www.linkedin.com/in/murilo-carnel%C3%B3s/
+## 🔗 Link
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/murilo-carnel%C3%B3s/)

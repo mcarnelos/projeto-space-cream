@@ -109,14 +109,14 @@ h2 {
   width: 11.2rem;
   height: 3.5rem;
 
-  animation: topdown 1500ms; /* chamando animação */
+  animation: topdown 1500ms; /* calling the animation */
 }
 
 footer {
   opacity: 0;
 }
 
-/* animações */
+/* animations */
 @keyframes topdown {
   0% {
     opacity: 0;
@@ -141,7 +141,8 @@ footer {
   }
 }
 
-/* Desktop */
+/* Desktop version*/
+
 @media (min-width: 930px) {
   .page {
     width: 100%;
@@ -183,10 +184,14 @@ footer {
 
   main div:nth-child(5) {
     grid-area: E;
+
+    opacity: 1;
   }
 
   main div:nth-child(6) {
     grid-area: F;
+
+    opacity: 1;
 
     margin-top: -21rem;
   }
@@ -217,6 +222,8 @@ footer {
   }
 
   .card {
+    position: relative;
+    
     animation: none;
   }
 
@@ -225,13 +232,13 @@ footer {
 
     margin-bottom: 5rem;
 
-    object-fit: cover; /* cobre toda a caixa definida para a imagem */
+    object-fit: cover; /* covers the entire box defined for the image */
 
-    transition: all 200ms; /* define o tempo da transição */
+    transition: all 200ms; /* set the transition time */
   }
 
   .card img:hover {
-    transform: scale(1.1); /* define as transições */
+    transform: scale(1.1); /* defines the transitions */
     opacity: 0.8;
   }
 
@@ -254,4 +261,3 @@ footer {
 
 
  
-  
